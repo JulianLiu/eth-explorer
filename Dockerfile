@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN sed -i 's/209.126.79.177:8545/testnet-public-rpc.owlting.com:7545/g' app/config.json 
+RUN sed -i 's/http:\/\/209.126.79.177:8545/https:\/\/testnet-public-rpc.owlting.com:443/g' app/config.json
 
 RUN npm install bower -g
 RUN npm install
